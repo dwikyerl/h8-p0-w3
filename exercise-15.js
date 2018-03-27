@@ -1,5 +1,5 @@
 /*
-  Logic Challenge - Mengelompokkan Angka
+  Logic Challenge - Mengelompokkan Hewan
 */
 
 /**
@@ -8,8 +8,7 @@
 
 function groupAnimals(animals) {
   const result = [];
-  result.push([animals[0]]);
-  for (let i = 1; i < animals.length; i++) {
+  for (let i = 0; i < animals.length; i++) {
     let animal = animals[i];
     for (let j = 0; j < result.length; j++) {
       if(result[j][0][0] === animal[0]) {
@@ -28,6 +27,6 @@ function groupAnimals(animals) {
 
 // TEST CASES
 console.log(groupAnimals(['cacing', 'ayam', 'kuda', 'anoa', 'kancil']));
-[ ['ayam', 'anoa'], ['cacing'], ['kuda', 'kancil'] ]
+// [ ['ayam', 'anoa'], ['cacing'], ['kuda', 'kancil'] ]
 console.log(groupAnimals(['cacing', 'ayam', 'kuda', 'anoa', 'kancil', 'unta', 'cicak' ]));
-// [ ['ayam', 'anoa'], ['cacing', 'cicak'], ['kuda'], ['unta'] ]
+// [ ['ayam', 'anoa'], ['cacing', 'cicak'], ['kuda', 'kancil'], ['unta'] ]

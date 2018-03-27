@@ -58,9 +58,6 @@ function dataHandling2(arr) {
       break;
   }
   console.log(month);
-  // for (let i = 0; i < date.length; i++) {
-  //   date[i] = parseInt(date[i]);
-  // }
   date.sort((a,b) => parseInt(a) < parseInt(b));
   console.log(date);
   date2 = date2.join('-');
